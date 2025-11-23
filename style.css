@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  background:#E3D8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+}
+
+/** LANDING CSS **/
+
+#landingPage {
+    width: 100%;
+    height: 100%;
+    background: #E3D8FF; /* Professional dark teal color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for contrast */
+    padding: 50px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 80%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#landingHeading {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#landingText {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+#getStartedBtn {
+    background-color: #ffd166; /* Golden color for the button */
+    color: #333;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+#getStartedBtn:hover {
+    background-color: #ff9e2c; /* Hover effect */
+    transform: scale(1.05);
+}
+
+#getStartedBtn:focus {
+    outline: none;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #content {
+        width: 90%;
+        padding: 30px;
+    }
+
+    #landingHeading {
+        font-size: 30px;
+    }
+
+    #landingText {
+        font-size: 16px;
+    }
+
+    #getStartedBtn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+/* SIGNUP CSS */
+
+.container1 {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 0 auto;
+}
+
+/* Added ID for the heading */
+#signupHeading {
+    text-align: center;
+    color: #6a0dad; /* Stylish purple color for the heading */
+    font-family: 'Pacifico', sans-serif; /* Stylish font */
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+#box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 80vh;
+}
+
+input {
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #e5e7eb;
+    padding-left: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f7f7f7;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6a0dad;
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: #bbb;
+    font-weight: 300;
+}
+
+/* Submit button */
+#signupbtn {
+    height: 50px;
+    background: linear-gradient(135deg, #6a0dad, #ff69b4);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+#signupbtn:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #ff69b4, #6a0dad);
+}
+
+#signupbtn:active {
+    transform: translateY(0);
+}
+
+/* Link for already have an account */
+#login-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #6a0dad;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#login-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container1 {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #signupbtn {
+        width: 100%;
+    }
+}
+/* LOGIN CSS*/
+
+.container2 {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+#welcomeText {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#email2 {
+  width: 80%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #e5e7eb;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  background-color: #f7f7f7;
+  outline: none;
+}
+password2
+#email2:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+  background-color: #fff;
+}
+
+#email2::placeholder {
+  color: #bbb;
+}
+#password2 {
+  width: 80%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #e5e7eb;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  background-color: #f7f7f7;
+  outline: none;
+}
+
+#password2:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+  background-color: #fff;
+}
+
+#password2::placeholder {
+  color: #bbb;
+}
+
+#lgbtn {
+  width: 60%;
+  height: 50px;
+  background: linear-gradient(135deg, #6a0dad, #ff69b4);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+#lgbtn:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #ff69b4, #6a0dad);
+}
+
+#lgbtn:active {
+  transform: translateY(0);
+}
+
+.forgot-password {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6a0dad;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container2 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input, #lgbtn {
+    width: 100%;
+  }
+}

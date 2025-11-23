@@ -1,0 +1,388 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar Styling */
+#navbar {
+    width: 100%;
+    background: linear-gradient(135deg, #6a0dad, #ff69b4);
+    padding: 15px; /* Adjusted navbar height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#userName {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+}
+
+#editProfileBtn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+    margin-top: 10px;
+    background-color: rgb(0, 36, 36);
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#editProfileBtn:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #ff69b4, #6a0dad);
+}
+
+/* Post Input Section */
+.input-post {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    
+}
+
+#postInput {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+    
+}
+
+#postInput:focus {
+    border-color: #4CAF50;
+}
+
+#imageURLInput {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+}
+
+#imageURLInput:focus {
+    border-color: transparent;
+}
+
+#postBtn {
+    background-color: rgb(0, 36, 36);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+}
+
+#postBtn:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #ff69b4, #6a0dad);
+}
+
+/* Feed Section */
+.feed {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.feed h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+}
+
+.post {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(8, 58, 59);
+}
+
+/* Post Header */
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+}
+
+.post-content {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Three-Dot Menu */
+.three-dots-menu {
+    cursor: pointer;
+    font-size: 18px;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.three-dots-menu:hover {
+    color: #6a0dad;
+}
+
+/* Post Options Dropdown */
+.post-options {
+    position: fixed;
+    width: 20vw;
+    background-color: #d85b5b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    top: 255px;
+    right: 260px;
+    display: none;
+    z-index: 1000;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.post-options.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.post-options button {
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    color: #333; /* Dark text color */
+    border-radius: 6px; /* Rounded button edges */
+    transition: all 0.3s ease;
+}
+
+.post-options button:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    color: #6a0dad; /* Purple text color on hover */
+    transform: translateX(5px); /* Slight shift effect on hover */
+}
+
+.post-options button:active {
+    transform: translateX(2px); /* Slight shrink when clicked */
+    background-color: #e0e0e0; /* Darker background when active */
+}
+
+/* Modal Styling for Profile Edit */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#newProfilePicURL, #uploadProfilePic {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#saveProfileBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saveProfileBtn:hover {
+    background-color: #45a049;
+}
+
+.like-btn {
+    border: 2px solid transparent; /* Set initial border */
+    font-size: 15px;
+    background-color: white;
+    color: #4CAF50; /* Initial button color */
+    padding: 8px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.like-btn:hover {
+    background-color: #4CAF50; /* Background color on hover */
+    color: white; /* Text color changes on hover */
+    border-color: #4CAF50; /* Border color on hover */
+    transform: scale(1.1); /* Slight scale-up effect on hover */
+}
+
+.like-btn:active {
+    background-color: #45a049; /* Slightly darker background on click */
+    transform: scale(1); /* Reset scale on click */
+}
+
+.like-btn svg { /* If you're using an icon inside the button (like a heart icon) */
+    transition: transform 0.3s ease; /* Smooth transition for the icon */
+}
+
+.like-btn:hover svg {
+    transform: scale(1.2); /* Scale the icon when hovered */
+}
+
+/* Logout Button Styling */
+#logoutBtn {
+     margin-top: 10px;
+    background-color: rgb(0, 36, 36);
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+}
+
+#logoutBtn:hover {
+   transform: translateY(-5px);
+    background: linear-gradient(135deg, #ff69b4, #6a0dad);
+}
+#posth1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+
+}

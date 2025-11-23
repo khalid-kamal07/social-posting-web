@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Feed</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar Section with Profile Info and Edit Option -->
+    <header id="navbar">
+        <div class="profile-info">
+            <img id="profilePic" src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-pic">
+            <div class="profile-details">
+                <h3 id="userName">User</h3>
+                <button id="editProfileBtn" onclick="openEditProfileModal()">Edit Profile</button>
+            </div>
+        </div>
+        <div class="input-post">
+            <input type="text" id="postInput" placeholder="What's on your mind?" />
+            <input type="url" id="imageURLInput" placeholder="Enter Image URL" />
+            <button id="postBtn" onclick="createPost()">Post</button>
+        </div>
+        <!-- Logout Button -->
+        <button id="logoutBtn" onclick="logout()">Logout</button>
+    </header>
+
+    <!-- Feed Section (Where Posts Appear) -->
+    <div id="feed" class="feed">
+        <h2>Recent Posts</h2>
+        <!-- Dynamically added posts will go here -->
+    </div>
+
+    <!-- Modal for Editing Profile -->
+    <div id="editProfileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeEditProfileModal()">&times;</span>
+            <h2>Edit Profile</h2>
+            <input type="url" id="newProfilePicURL" placeholder="Enter Image URL" />
+            <input type="file" id="uploadProfilePic" />
+            <button id="saveProfileBtn" onclick="saveProfile()">Save</button>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
